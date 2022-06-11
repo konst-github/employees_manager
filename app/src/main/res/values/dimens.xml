@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_default">10dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_big">15dp</dimen>
+    <dimen name="margin_zero">0dp</dimen>
+
+    <dimen name="padding_default">10dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_small2">-5dp</dimen>
+
+    <dimen name="add_button_size">50dp</dimen>
+    <dimen name="add_button_radius">25dp</dimen>
+    <dimen name="add_button_plus_size">3dp</dimen>
+    <dimen name="add_button_plus_margin">15dp</dimen>
+
+    <dimen name="list_cell_height">120dp</dimen>
+    <dimen name="list_cell_text_height">30dp</dimen>
+    <dimen name="list_cell_text_width">160dp</dimen>
+    <dimen name="list_cell_name_height">60dp</dimen>
+
+    <dimen name="text_size_name">18sp</dimen>
+
+</resources>

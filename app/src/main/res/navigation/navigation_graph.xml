@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/employeesListFragment">
+    <fragment
+        android:id="@+id/employeesListFragment"
+        android:name="com.tiani.employeesmanager.fragments.employees_list.EmployeesListFragment"
+        android:label="EmployeesListFragment" >
+        <action
+            android:id="@+id/action_employeesListFragment_to_employeeDetailsFragment"
+            app:destination="@id/employeeDetailsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" >
+            <argument
+                android:name="employeeId"
+                app:argType="long"
+                android:defaultValue="0L" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/employeeDetailsFragment"
+        android:name="com.tiani.employeesmanager.fragments.employee_details.EmployeeDetailsFragment"
+        android:label="EmployeeDetailsFragment">
+        <argument
+            android:name="employeeId"
+            app:argType="long"
+            android:defaultValue="0L" />
+    </fragment>
+</navigation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    tools:ignore="ContentDescription"
+    tools:context=".fragments.employees_list.EmployeesListFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_app"
+        android:layout_margin="100dp"
+        android:alpha="0.25"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/employeesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:spanCount="@integer/empl_list_columns"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/cell_employee"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/add_employee_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin_default"
+        android:layout_width="@dimen/add_button_size"
+        android:layout_height="@dimen/add_button_size"
+        android:background="@drawable/shape_add_button"/>
+
+</RelativeLayout>

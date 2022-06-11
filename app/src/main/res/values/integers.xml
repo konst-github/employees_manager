@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Number of columns for the employees list grid -->
+    <integer name="empl_list_columns">1</integer>
+
+</resources>
